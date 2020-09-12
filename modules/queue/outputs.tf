@@ -7,7 +7,7 @@ output messages_queue_writer_connection_string {
 }
 
 output error_messages_queue_writer_connection_string {
-  value = azurerm_servicebus_queue_authorization_rule.AZFunctionsErrorMessagesWriter.primary_connection_string
+  value = azurerm_servicebus_queue_authorization_rule.app1ErrorMessagesWriter.primary_connection_string
 }
 
 output error_message_queue_name {

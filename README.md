@@ -40,8 +40,7 @@ According to the diagram we have:
     -backend-config "client_id=\<client id\>" 
     -backend-config "client_secret=\<client secret\>" 
     -backend-config "tenant_id=\<tenant id\>" 
-    -backend-config "resource_group_name=yourResourceGroupName"
-</code>
+    -backend-config "resource_group_name=yourResourceGroupName"</code>
 
 3. Terraform plan:
 <code>terraform plan 
@@ -51,12 +50,10 @@ According to the diagram we have:
     -var 'tenant_id=\<tenant id\>' 
     -var-file="rootVars.tfvars" 
     -var-file="rootVars-\<environment\>.tfvars" 
-    -out tfout.log
-</code>
+    -out tfout.log</code>
 
 4. Terraform apply:
-<code>terraform apply tfout.log
-</code>
+<code>terraform apply tfout.log</code>
 
 ## 4 - How to retrieve connection strings to send/retrieve messages from the queue
 
